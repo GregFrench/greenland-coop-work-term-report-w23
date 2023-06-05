@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Greenland Coop Work Term Report",
+    title: "Greenland Coop Work Term Report W23",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -17,5 +17,5 @@ module.exports = {
       __key: "images",
     },
   ],
-  pathPrefix: "/greenland-coop-work-term-report",
+  pathPrefix: "/greenland-coop-work-term-report-w23",
 };

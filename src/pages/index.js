@@ -70,7 +70,7 @@ const IndexPage = () => {
 
         <h2 style={h2Styles}>About Greenland</h2>
 
-        <p>Greenland is an engineering consulting firm based in Collingwood Ontario. The firm works in conjunction with individuals across governments, industry, and academia on many different engineering projects. The company is spread across multiple divisions and offices, with the software team that I was apart of being entirely remote. The primary method of communication with teammates is over Microsoft Teams, with the ability to instantly message someone or hop on a call with someone if you are unclear what needs to be done, or need additional assistance in solving a problem. Everyone is very cordial and willing to help at a moments notice.</p>
+        <p>Greenland is an engineering consulting firm based in Collingwood Ontario. The firm works in conjunction with individuals across governments, industry, and academia on many different engineering projects. The company is spread across multiple divisions, with some employees working in office and others working remotely from home. With the software team that I was apart of working entirely remote, the primary method of communication was over Microsoft Teams. Teams enables the ability to instantly message coworkers whenever something is needed, such as help with a software issue or requesting access to a company resource. It also enables the ability to hop on a call with someone if you need additional assistance in solving a problem, or need more clarification with the task at hand. Everyone is very cordial and willing to help at a moments notice.</p>
 
         <h2 style={h2Styles}>Job Description</h2>
 
