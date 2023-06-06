@@ -4,6 +4,7 @@ import logo from "../images/greenland-logo.png"
 import reactIcon from "../images/react-icon.png"
 import osIcon from "../images/os-icon.png"
 import apiIcon from "../images/api-icon.png"
+import threatsWaterQuality from "../images/threats-water-quality.png"
 
 // styles
 const pageStyles = {
@@ -47,6 +48,17 @@ const goalStyles = {
   display: "flex",
 }
 
+const threatsFigCaption = {
+  marginTop: 10,
+  textAlign: "center",
+};
+
+const threatsImgStyles = {
+  display: "block",
+  margin: "auto",
+  maxWidth: "75%",
+}
+
 // markup
 const IndexPage = () => {
   return (
@@ -66,7 +78,7 @@ const IndexPage = () => {
 
         <h2 style={h2Styles}>Introduction</h2>
 
-        <p>My name is Greg French and I’m a 4th-year computer science co-op student at the University of Guelph. The following is the final report for my 4th co-op work term, highlighting my experience at Greenland over the winter of 2023, as well as giving an overview of the goals I had made at the beginning of the term and my progress in achieving them. I had previously completed my 3rd co-op term at Greenland over the summer of 2022. At the end of that term, they asked if I&lsquo;d like to return. We came to an agreement for me to return the following winter. The following is my experience.</p>
+        <p>My name is Greg French and I&lsquo;m a 4th-year computer science co-op student at the University of Guelph. The following is the final report for my 4th co-op work term, highlighting my experience at Greenland over the winter of 2023, as well as giving an overview of the goals I had made at the beginning of the term and my progress in achieving them. I had previously completed my 3rd co-op term at Greenland over the summer of 2022. At the end of that term, they asked if I&lsquo;d like to return. We came to an agreement for me to return the following winter. The following is my experience.</p>
 
         <h2 style={h2Styles}>About Greenland</h2>
 
@@ -74,7 +86,15 @@ const IndexPage = () => {
 
         <h2 style={h2Styles}>Job Description</h2>
 
-        <p>As a software developer, aside from implementing bug fixes and doing the occasional code refactor, the most significant task I had throughout the term was building out the Software Monitoring and Alerts System (SMAS). This is an internal tool that monitors various aspects of Greenland’s existing EC2 instances and sends alerts to employees over email and SMS if it notices an existing issue. Some of the aspects that SMAS tracks are volume storage, CPU load, memory usage, the healthiness of endpoints, and error logs. The front end was built from the ground up entirely in React, with the assistance of an existing dashboard template. The backend was built with Python Flask which managed the entire API for the application and was responsible for making calls to the database and sending that data back as a response to the client using JSON objects. The DBMS that is used is Postgresql, with the database schema being integrated on top of their existing database infrastructure. I also built an internal library that was installed on each instance used for SMAS that was responsible for collecting all server data and then sending that data back to the backend server to be stored in the database.</p>
+        <p>As a software developer, the most significant task I had throughout the term was building out the Software Monitoring and Alerts System (SMAS). This is an internal web application that monitors various aspects of Greenland’s existing EC2 instances and sends alerts to employees over email and SMS if it notices an existing issue. Some of the aspects that SMAS tracks are volume storage, CPU load, memory usage, the healthiness of endpoints, and error logs. The front end was built from the ground up entirely in React, with the assistance of an existing dashboard template. The backend was built with Python Flask which managed the entire API for the application and was responsible for making calls to the database and sending that data back as a response to the client using JSON objects. The DBMS that is used is Postgresql, with the database schema being integrated on top of their existing database infrastructure. I also built an internal library that was installed on each instance used for SMAS that was responsible for collecting all server data and then sending that data back to the backend server to be stored in the database.</p>
+
+        <p>The main software application the software team at Greenland works on is called THREATS. THREATS is a web application used for tracking changes in environmental data over time. The platform itself is mainly written in PHP, jQuery, and Python and utilizes many AWS EC2 instances, each handling different parts of the application. Each instance may also have zero or more Docker containers, each running a separate sub-application used to support the larger application. As you can probably infer, managing all of this can be quite complex. SMAS helps deal with this complexity by storing all data collected in one central place, making it easy track specific issues across many different instances.</p>
+        <p>
+          <figure>
+            <img src={threatsWaterQuality} style={threatsImgStyles} alt="THREATS - Air Quality Alberta" />
+            <figcaption style={threatsFigCaption}><em>THREATS: Water Quality Tool</em></figcaption>
+          </figure>
+        </p>
 
         <h2 style={h2Styles}>Goals</h2>
 
