@@ -66,7 +66,7 @@ const IndexPage = () => {
 
         <h2 style={h2Styles}>Introduction</h2>
 
-        <p>My name is Greg French and I&lsquo;m a 4th-year computer science co-op student at the University of Guelph. The following is the final report for my 4th co-op work term, highlighting my experience at Greenland over the winter of 2023, as well as giving an overview of the goals I had made at the beginning of the term and my progress in achieving them.</p>
+        <p>My name is Greg French and I’m a 4th-year computer science co-op student at the University of Guelph. The following is the final report for my 4th co-op work term, highlighting my experience at Greenland over the winter of 2023, as well as giving an overview of the goals I had made at the beginning of the term and my progress in achieving them. I had previously completed my 3rd co-op term at Greenland over the summer of 2022. At the end of that term, they asked if I&lsquo;d like to return. We came to an agreement for me to return the following winter. The following is my experience.</p>
 
         <h2 style={h2Styles}>About Greenland</h2>
 
