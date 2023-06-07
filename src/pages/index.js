@@ -97,6 +97,10 @@ const IndexPage = () => {
           </figure>
         </p>
 
+        <p>The second most significant task I had at Greenland was the integration of React into the front end of the main THREATS platform. The goal was to have the original codebase still written in jQuery, while any new features developed would be written in React. This initially proved challenging as the bulk of the code running on the front end is written in jQuery, a library that does not exactly play nice with React out of the box. However, utilizing a rapid development tool called Vite.js along with a few tricks up my sleeve, I was able to get it integrated and working properly.</p>
+
+        <p>Once React was properly integrated into THREATS, another big issue that came up was that of sending data produced by the application running the jQuery code and passing that data into a React component so that they could communicate with one another. Solving this issue in my opinion was the most clever trick I came up with throughout the term. The solution involved attaching a custom object to the window object used by one of the jQuery scripts and setting up a watcher for that custom object from one of the React components. Then whenever data is updated in the jQuery script, the watcher event would fire, executing a callback that would update the local state of that React component. The React component would then be free to do whatever it wanted with the data. This came in especially useful for the new dashboard feature I was building within THREATS that required knowing how big the resizable panel it was contained in was. Users could expand this panel to display more or less data on the screen. With this panel controlled by jQuery, the panel width could now be passed into the React component, letting the component know the exact size of the panel it was residing in, allowing it to perfectly tailor the content on the screen based on the width.</p>
+
         <h2 style={h2Styles}>Goals</h2>
 
         <p>Around the beginning of my co-op term, I made three 3 different goals that I would work to achieve throughout the term. The following are those goals:</p>
